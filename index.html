@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crypto Wallet Monitor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Crypto Wallet Monitor</h1>
+            <div class="menu" id="menu">
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu-content" id="menu-content">
+                    <a href="#">Home</a>
+                    <a href="accounts.html">Accounts</a>
+                    <a href="settings.html">Settings</a>
+                </div>
+            </div>
+        </div>
+        <p>Enter your cryptocurrency wallet address:</p>
+        <input type="text" id="walletAddress" placeholder="Enter Wallet Address">
+        <button onclick="monitorWallet()">Monitor</button>
+        <button onclick="generateReport()">Generate Report</button>
+        <div id="walletInfo">
+            <!-- Wallet information will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
